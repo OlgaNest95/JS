@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+            <li> First </li>
+            <li> Second </li>
+            <li> Third </li>  
+            <li> Fourth</li> 
+            <li> Fifth </li>
+            <li> Sixth </li>
+            <li> Seventh </li>
+            <li> Eighth </li>
+
+<script>
+    //4
+   let collectionLi = document.querySelectorAll('li')
+
+   function getRandomLi(collectionLi){
+       var rand = Math.floor(Math.random() * document.querySelectorAll('li').length);
+       return rand;
+    }
+   function changeColorRundomLi(){
+      collectionLi[getRandomLi(collectionLi)].style.color= 'red'
+
+   }
+   let timeId=setInterval (() => changeColorRundomLi(),1000);
+
+</script> 
+
+
+<script type="text/javascript" src="script.js"></script> 
+</body>
+</html>
