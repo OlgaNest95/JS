@@ -1,0 +1,89 @@
+//out:fales
+@import "./color.less";
+@import "./media.less";
+/*aboutus_section*/
+.aboutus_section {
+    background-color:#80a6c8;
+    text-align: center;
+    padding: 70px 350px 90px 350px ;
+    h2 {
+    color: @maincolor;
+    font-family:"Raleway-Bold",sans-serif;
+    text-transform: uppercase;
+    font-size:1.07rem ;
+    width: 700;
+    }
+    p {
+    font-family:"Raleway-Bold",sans-serif;
+    color: @maincolor;
+    margin-top: 20px;
+    font-size:1rem ;
+    line-height: 1.73rem;  
+    opacity: 0.5;
+    }
+    .social_media a {
+    color: @maincolor;
+    border:1.5px solid @maincolor;
+    margin-top: 20px;
+    }
+}
+@media @extralarge-breakpoint {
+    .aboutus_section {
+     padding: 100px 150px 100px 150px ;    
+  }}
+@media @extra-breakpoint {
+    .aboutus_section {
+    padding: 70px 150px 70px 150px ;    
+    h2 {
+    font-size:0.9rem ;
+    }
+    p {
+    font-size:0.87rem ;
+    line-height: 1.6rem;  
+    }
+    .social_media a {
+    border:1.3px solid @maincolor;
+    margin-top: 20px;
+    }
+    .social_media a {
+    border:0.8px solid @icon;
+    height: 35px;
+    width: 35px;      
+    font-size: 1.4rem;       
+    line-height: 2.7rem;
+    }
+}
+}
+@media @large-breakpoint {
+    .aboutus_section {
+    padding: 60px 150px 60px 150px ;}
+}   
+@media @medium-breakpoint{
+    .aboutus_section {
+    padding: 55px 150px 55px 150px ;    
+    h2 {
+     font-size:0.8rem ;
+    }
+    p {
+    font-size:0.72rem ;
+    line-height: 1.4rem;  
+        }
+    .social_media a {
+    border:1.3px solid @maincolor;
+    margin-top: 20px;
+    }
+    .social_media a {
+    border:0.7px solid @icon;
+    height: 30px;
+    width: 30px;      
+    font-size: 1.2rem;       
+    line-height: 2.3rem;
+    margin-bottom: 20px;
+        }}
+} 
+@media @medium-small-breakpoint{  
+        
+  }
+@media @small-breakpoint{
+    
+ }

@@ -1,0 +1,58 @@
+@import "./color.less";
+@import "./media.less";
+@import "./font.less";
+@import "./header_section.less";
+@import "./aboutus_section.less";
+@import "./footer_section.less";
+
+html {
+    font-size: 13px;
+}
+.main_container {
+    max-width:1900px;
+    margin: 0 auto; 
+}
+.button {
+    display: inline-block;
+    width: 202px;
+    height: 45px;
+    background-color:@buttoncolor;       
+    text-transform: uppercase;
+    text-align: center;
+    padding: 13px 45px;
+    font-size: 13px;
+    border-radius: 2px;
+    margin-top: 60px;  
+        }
+a {    
+    color:@maincolor;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family:"Raleway-Bold";
+    }
+a:hover{
+    text-decoration:none;
+    color: @buttoncolor;  
+    }
+.button:hover {
+    background-color: red;
+    color: @maincolor;
+    transform: scale(1.1);
+    transition-duration: 1.5s;
+    }
+
+.social_media a {
+    border:1px solid @icon;
+    height: 40px;
+    width: 40px;
+    color: @icon;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 3rem;
+    }
+.social_media a:hover {
+    background-color: @bright;
+    transition-property: all;
+    transition-duration: 1s;
+    }
